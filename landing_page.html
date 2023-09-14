@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+
+        }
+        header{
+            width: 100%;
+            height: 100vh;
+            background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("img3.jpg");
+            background-size: cover;
+            font-family: sans-serif;
+
+        }
+nav{
+    padding-top: 10px;
+    width: 100%;
+    height:100%;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    
+    /* background-color: rgba(0, 0, 0, 0.386); */
+}
+
+.logo{
+    font-size:2em;
+    letter-spacing: 2px;
+    transition: 0.4s linear;
+}
+.logo:hover{
+    color: rgb(249, 165, 46);
+
+}
+.logo:hover span{
+    color: aliceblue;
+}
+.logo span{
+    color: rgb(249, 165, 46);
+}
+
+
+.menu a{
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 10px 20px;
+    font-size: 20px;
+    position: relative;
+}
+.menu a::before{
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 0%;
+height: 100%;
+border-bottom: 2px solid rgb(249, 165, 46) ;
+transition: 0.7s linear;
+
+}
+
+.menu a:hover::before{
+    width: 40%;
+}
+
+.reg a{
+text-decoration: none;
+color: rgb(255, 166, 42);
+padding: 10px 20px;
+font-size: 20px;
+border:2px solid rgb(248, 155, 24);
+background-color: rgba(0, 0, 0, 0.304);
+border-radius: 8px;
+transition: 0.4s linear;
+}
+.reg a:hover{
+    background-color:  rgb(237, 148, 23);
+    color: black;
+    border: 2px solid black;
+}
+.sec{
+max-width: 640px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+text-align: center;
+color: aliceblue;
+}
+.sec span{
+    letter-spacing: 10px;
+    color: rgb(214, 145, 48)
+}
+.sec h1{
+    font-size: 3.8rem;
+}
+.sec a{
+text-decoration: none;
+color: rgb(14, 14, 14);
+padding: 10px 20px;
+font-size: 20px;
+border:2px solid rgb(15, 15, 14);
+border-radius: 8px;
+letter-spacing: 2cap;
+background-color: rgb(214, 145, 48);
+}
+.sec a:hover{
+    border: solid 2px black;
+    color: black;
+    
+}
+.col{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+
+.btn1 a{
+   text-decoration: none;
+color: black;
+padding: 10px 20px;
+font-size: 20px;
+border:2px solid black;
+background-color: rgb(248, 155, 24);
+border-radius: 8px;
+   
+    
+}
+.btn:hover{
+    font-size: 18px !important;
+    padding: 10px 15px !important;
+    font-size: 18px !important;
+}
+
+.about_us h2{
+    font-size: 50px;
+    font-family: 'yesteryear',cursive;
+    color: rgb(241, 136, 16);
+}
+.about_us span{
+    color: blue;
+    font-size: 35px;
+    font-family:  sans-serif;
+}
+.about_us{
+    margin-top: 82px;
+}
+
+.col-md-6 h2{
+    margin-top: 60px;
+}
+.col-md-6 img{
+    width: 56vh;
+    height: 40vh;
+    
+}
+
+
+
+.col-md-6 .btn1 a{
+    text-align: center;
+    text-decoration: none;
+    color: beige;
+    font-size: 15px;
+}
+
+footer{
+    padding: 50px;
+    background-color: rgb(23, 13, 33);
+    color: white;
+}
+footer .box{
+    display: flex;
+    column-gap: 20%;
+    font-family: sans-serif;
+}
+footer .box .box1 h2{
+    font-size: 25px;
+    font-family: sans-serif;
+}
+.icons{
+    display:flex ;
+    color: rgb(241, 136, 16);
+    column-gap: 10px;
+    font-size: 25px;
+    padding-left: 35px;
+}
+footer .copyright{
+    padding: 20px;
+    text-align: center;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+<nav class="navber">
+    <div class="logo">Best <span>Tour</span></div>
+    <div class="menu">
+        <a href="">Home</a>
+        <a href="">Beatufull places</a>
+        <a href="">Best offer's</a>
+        <a href="">About Us</a>
+        <a href="">Contact</a>
+    </div>
+    <div class="reg">
+        <a href="">Register</a></div>
+</nav>
+<section class="sec">
+    <span>JUST FUN</span>
+    <h1>Jurassic Travel Agency</h1>
+
+    <br>
+    <a href="">Book your Trip</a>
+</section>
+    </header>
+    <section class="about_us">
+        <div class="container">
+            <div class="about">
+                <div class="col">
+                    <div class="col-md-6">
+                        <h2>About <span>Our Agency</span></h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam facere dolor eos deleniti quibusdam voluptatibus, quo fugiat ducimus repellat expedita cum dicta culpa, nobis qui nesciunt at dolorum aperiam. Necessitatibus!</p>
+                        <div class="btn1">
+                            <a href="#">READ MORE</a>
+                          </div>
+                        </div>
+                        <div class="col-md-6 pic">
+                          <img src="img1.jpg" alt="no image">
+
+                      </div>
+                     </div>
+                    </div>
+                  </div>
+                </section>
+
+                <footer style="margin-top: 80px;">
+                    <div class="box">
+                      <div class="box1">
+                        <h2>ADDRESS:</h2>
+                        <p>23/4/c akm road,kol-90</p>
+                  
+                      </div>
+                      <div class="box1">
+                        <h2>OPENING HOURES:</h2>
+                        <p>Monday-Friday.........................................11:00am-2:00am</p>
+                        <p>Saturday-Sunday........................................10:00am-11pm</p>
+                      </div>
+                      <div class="box1">
+                        <h2>We Are Socials</h2>
+                        <p>Feel Free To Check Our Social Media Pages</p>
+                  
+                      </div>
+                  
+                      
+                  
+                    </div>
+                    <p class="copyright">&copy;2023- All copyright Reserved(Saikat Mondal)</p>
+                  
+                  </footer>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
